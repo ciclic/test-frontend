@@ -21,7 +21,7 @@ Se os parametros forem:
 O body da request deverá ser:
 
 ```json
-{ "expr": "20*(((1 + 0.00517)^24 - 1) / 0.00517)" }
+{ "expr": "20 * (((1 + 0.00517) ^ 24 - 1) / 0.00517)" }
 ```
 
 ## Segunda tela
