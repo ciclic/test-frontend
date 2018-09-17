@@ -37,6 +37,6 @@ Olá [nome], juntando R$[mensalidade] todo mês, você terá R$[resultado da req
 - Tente colocar na aplicação tudo o que aprendeu até agora ou pelo menos o que acha mais legal.
 - Testes são legais, mas não obrigatórios.
 - Você pode enviar o teste em um pull-request, um link do repositório ou um zip mesmo.
-- Qualquer dúvida envie um e-mail para `vagasfront+teste@ciclic.com.br`.
+- Qualquer dúvida envie um e-mail para [vagasfront+teste@ciclic.com.br](mailto:vagasfront+teste@ciclic.com.br?subject=Me%20ajuda%20fronts).
 
 Boa sorte :)
