@@ -10,21 +10,27 @@ Ao clicar em simular, deve ser feito um POST na api [http://api.mathjs.org/v4/](
 
 O body deverá ser um JSON com a seguinte estrutura: `{ "expr": "" }`. Em `expr` vai a expressão matemática para calcular o juros compostos. Deverá  ser usada a seguinte fórmula: `[valor da mensalidade * (((1 + [taxa de juros]) ^ [tempo de contribuicao em meses] - 1) / [taxa de juros])`.
 
-**Exemplo do body:**
+**Exemplo:**
+
+Se os parametros forem: 
+
+> Valor da mensalidade: **R$ 20,00**<br/>
+> Taxa de juros: **0,517% ao mês**<br/>
+> Tempo de contribuição: **2 anos**
+
+O body da request deverá ser:
+
 ```json
 { "expr": "20*(((1 + 0.00517)^24 - 1) / 0.00517)" }
 ```
-> Valor da mensalidade: **R$ 20,00** | Taxa de juros: **0,517% ao mês** | Tempo de contribuição: **2 anos**
 
 ## Segunda tela
 
 A segunda tela deverá exibir um texto com as informaçoes dos campos de nome, mensalidade, tempo e o resultado da request. 
 
-**Exemplo do texto:**
+**Exemplo:**
 
-```
-Olá [nome], juntando R$[mensalidade] todo mês, você terá R$[resultado da request] em [tempo].
-```
+Olá **[nome]**, juntando **R$[mensalidade]** todo mês, você terá **R$[resultado da request]** em **[tempo]**.
 
 ## Wireframe de exemplo
 
