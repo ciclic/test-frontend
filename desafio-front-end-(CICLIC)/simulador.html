@@ -1,0 +1,40 @@
+<!-- Objetivos:
+        .Design responsivo
+        .Render tela
+        .Funcionar
+     -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='styles.css' rel='stylesheet'>
+    <title>Simulador</title>
+</head>
+<body>
+    <div id='app'>
+        <form>
+            <label > Nome 
+                <input id='nome' type='text' placeholder="Nome fi"/> <br>
+            </label > 
+
+            <label> Tempo
+                <input id='contri' class='tempInp' type='text' placeholder="Em meses"/> 
+            </label> <br>
+
+            <label> Mensalidade
+                <input id='mes' class='mesInp' type='text' placeholder="Valor"/>
+            </label>
+            <div class='space'></div>
+        </form>
+
+            <button id='simulador' class='simulador'>Simulador</button>
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <script src='main.js'></script>
+        </form>
+    </div>
+
+</body>
+</html>

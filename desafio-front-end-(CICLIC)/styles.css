@@ -1,7 +1,20 @@
+.space{
+    margin-bottom: 20px;
+}
+
 .mesInp{
     width: 113px; 
 }
 
 .tempInp{
     width: 157.5px;
+}
+
+form {
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+.simulador {
+    margin-left: 50%;
 }
