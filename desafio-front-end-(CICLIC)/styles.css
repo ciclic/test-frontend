@@ -1,20 +1,88 @@
+/*==============Código funciona para as duas páginas================*/
+@font-face{
+    font-family: 'oswald';
+    src: url(./fonts/Oswald-SemiBold.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #70AEFF;
+}
+#app {
+    background-color: #f2f2f2;
+    box-shadow: 1px 1px 10px 0 #F9E8E0;
+    margin: 5% auto;
+    overflow: hidden;
+    width: 600px;
+    height: 500px;
+    border-radius: 9px;
+}
 .space{
     margin-bottom: 20px;
 }
-
-.mesInp{
-    width: 113px; 
+/*==============Cabeçalho================*/
+header{
+    margin: 10px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #00D2BE;
 }
-
-.tempInp{
-    width: 157.5px;
+header .logo{
+    width: 160px;
+    padding-left: 35%;
+    padding-top: 1%;
 }
-
-form {
-    margin-left: 40%;
-    margin-top: 10%;
+/*==============Corpo================*/
+section h1{
+    text-align: center;
+    font-family: 'oswald';
+    color: #4b4b4b;
 }
-
-.simulador {
-    margin-left: 50%;
+section input{
+    width: 395px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 5px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+/*==============Mensagem na segunda tela================*/
+section #mensagem{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-left: 12%;
+    margin-top: 20%;
+    padding: 30px;
+    width: 400px;
+    background-color: #00D2BE;
+    border-radius: 50px;
+}
+a{
+    text-decoration: none;
+}
+/*==============Estilo Botão================*/
+footer .botao {
+    width: auto;
+    height: auto;
+    background-color:#00D2BE;
+    border: solid #00D2BE 1px;
+    color: white;
+    box-Shadow: 2px 1px 4px #B0B0B0;
+    font-Weight: bold;
+    font-family: 'oswald';
+    font-size: 24px;
+    border-radius: 30px;
+    margin: auto;
+    padding: 0px 40px 5px 40px;
+    display: block;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+footer .botao:hover{
+    transform: scale(1.05);
 }
