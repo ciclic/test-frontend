@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content="Calculadora Juros compostos">
+    <meta name='keywords' content='Ciclic, Simulador, Calculadora, Juros'>
+    <meta name='author' content="André Alves">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='styles.css' rel='stylesheet'>
+    <title>Simulador</title>
+</head>
+
+<body>
+    <div id='app'>
+        <div class='container'>
+            <header>
+                <div class='cabecalho'>
+                    <!--Peguei esse logo do código fonte no site da Ciclic-->
+                    <svg class='logo' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3071.56 720">
+                        <defs>
+                            <linearGradient id="ciclic-negative_svg__b" x1="48.16" y1="540.01" x2="663.27" y2="184.87" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#cde6e1"></stop>
+                                <stop offset="1" stop-color="#fff"></stop>
+                            </linearGradient>
+                            <linearGradient id="ciclic-negative_svg__a" x1="1067.92" y1="360" x2="1703.56" y2="360" gradientUnits="userSpaceOnUse">
+                                <stop offset=".1" stop-color="#cde6e1"></stop>
+                                <stop offset="1" stop-color="#fff"></stop>
+                            </linearGradient>
+                            <linearGradient id="ciclic-negative_svg__c" x1="2435.92" y1="360" x2="3071.56" y2="360" xlink:href="#ciclic-negative_svg__a"></linearGradient>
+                        </defs>
+                        <path d="M512.74 512.74S459 576 360 576c-119.29 0-216-96.7-216-216s96.71-216 216-216c99 0 152.74 63.27 152.74 63.27a72 72 0 1 0 101.82-101.83S520.88 0 360 0C161.18 0 0 161.18 0 360s161.18 360 360 360c160.88 0 254.56-105.44 254.56-105.44a72 72 0 0 0-101.82-101.82z" fill="url(#ciclic-negative_svg__b)"></path>
+                        <path d="M1580.65 512.74S1526.92 576 1427.92 576c-119.3 0-216-96.7-216-216s96.7-216 216-216c99 0 152.73 63.27 152.73 63.27a72 72 0 0 0 101.83-101.83S1588.8 0 1427.92 0c-198.83 0-360 161.18-360 360s161.17 360 360 360c160.88 0 254.56-105.44 254.56-105.44a72 72 0 0 0-101.83-101.82z" fill="url(#ciclic-negative_svg__a)"></path>
+                        <path d="M2948.65 512.74S2894.92 576 2795.92 576c-119.3 0-216-96.7-216-216s96.7-216 216-216c99 0 152.73 63.27 152.73 63.27a72 72 0 0 0 101.83-101.83S2956.8 0 2795.92 0c-198.83 0-360 161.18-360 360s161.17 360 360 360c160.88 0 254.56-105.44 254.56-105.44a72 72 0 0 0-101.83-101.82z" fill="url(#ciclic-negative_svg__c)"></path>
+                        <path fill="#fff" d="M1682.48 512.74a72 72 0 0 0-101.83 0S1526.92 576 1427.92 576c-119.3 0-216-96.71-216-216a72 72 0 0 0-144 0c0 198.82 161.17 360 360 360 160.88 0 254.56-105.44 254.56-105.44a72 72 0 0 0 0-101.82zm859.01-407.3a72 72 0 0 1 101.82 101.82A215.48 215.48 0 0 0 2579.92 360c0 119.29 96.7 216 216 216 99 0 152.73-63.26 152.73-63.26a72 72 0 0 1 101.83 101.82S2956.8 720 2795.92 720c-198.83 0-360-161.18-360-360a359 359 0 0 1 105.57-254.56zM1922.92 0a71.9 71.9 0 0 0-72 72v576a72 72 0 0 0 144 0V72a71.91 71.91 0 0 0-72-72zm-1071 306a71.9 71.9 0 0 0-72 72v198a72 72 0 0 0 144 0V378a71.91 71.91 0 0 0-72-72z"></path>
+                        <circle fill="#fff" cx="851.92" cy="153" r="81" transform="rotate(-1.71 852.922 153.141)"></circle>
+                        <path fill="#fff" d="M2219.92 306a71.9 71.9 0 0 0-72 72v198a72 72 0 0 0 144 0V378a71.91 71.91 0 0 0-72-72z"></path>
+                        <circle fill="#fff" cx="2219.92" cy="153" r="81" transform="rotate(-1.91 2216.501 152.76)"></circle>
+                        <path fill="#fff" d="M614.56 512.74a72 72 0 0 0-101.83 0S459 576 360 576c-97.09 0-152.73-63.26-152.73-63.26a72 72 0 0 0-101.83 101.82S199.12 720 360 720s254.56-105.44 254.56-105.44a72 72 0 0 0 0-101.82z"></path>
+                    </svg>
+                </div>
+            </header>
+
+            <section>
+                <div class='space'></div>
+                <div class='formulario'>
+                    <h1>Simulador</h1>
+                    <div class='space'></div>
+
+                    <form>
+                        <label>
+                            <input id='nome' .class='nomeInp' type='text' placeholder="Nome ex: João Neve" />
+                            <br>
+                        </label>
+
+                        <label>
+                            <input id='mes' class='mesInp' type='text' placeholder="Valor depositado ao mês" />
+                        </label>
+                        <br>
+
+                        <label>
+                            <input id='contri' class='tempInp' type='text' placeholder="Tempo (meses)" />
+                        </label>
+                        <div class='space'></div>
+                    </form>
+                </div>
+            </section>
+
+            <footer>
+                <div class='botao'>
+                    <button id='simular' class='btn'>Simular</button>
+                </div>
+            </footer>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src='main.js'></script>
+        </form>
+    </div>
+</body>
+
+</html>
