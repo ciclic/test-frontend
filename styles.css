@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'oswald';
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*==============Cabeçalho================*/
+header{
+    height: 40px;
+    background-color: #00D2BE;
+    color: #fff;
+}
+/*==============Corpo================*/
+#app{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #70AEFF;
+    padding: 20px 48px;
+    margin: 30px 0;
+    color: white;
+    border-radius: 6px;
+}
+/*==============Formulário Input, Título, Botão ================*/
+form input, button, h2{
+    width: 100%;
+    margin-bottom:4px;
+    padding: 8px;
+    border: 1px solid #ffffffaa; 
+    background-color: #ffffff;
+    color: black;
+    font-weight: lighter;
+}
+h2{
+    padding: 0 8px;
+    margin-bottom: 30px;
+    background-color: #00D2BE;
+    color: #ffffff;
+}
+button{
+    width: 30%;
+    background-color: #00D2BE;
+    color: #ffffff;
+    font-size: 14pt;
+    font-weight: bolder;
+    transition: all 0.3s;
+    margin-top:30px;
+}
+button:hover{
+    transform: scale(1.10);
+}
+/*==============Resposta================*/
+.result p{
+    width: 100%;
+    background-color: white;
+    padding: 8px;
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#808080;
+}
+/*==============Hide================*/
+.form{
+    transition: all 0.4s;
+}
+.hide{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -100px;
+}
