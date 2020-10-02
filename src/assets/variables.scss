@@ -1,0 +1,150 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$fa-font-path: "/fonts/vendor/font-awesome";
+$enable-gradients: true;
+
+$primary:   #fc3d96;
+$secondary: #144658;
+$success:   #01c2b2;
+$info:$cyan;
+$warning:   $yellow;
+$danger:$red;
+$light: #e8e8e8;
+$dark:$gray-800;
+
+$white-opacity-100: transparentize(white, 0.9);
+$white-opacity-200: transparentize(white, 0.8);
+
+$theme-colors: (
+    "primary":  $primary,
+    "secondary":$secondary,
+    "success":  $success,
+    "info": $info,
+    "warning":  $warning,
+    "danger":   $danger,
+    "light":$light,
+    "dark": $dark,
+    "green":$green,
+    "opacity":$white-opacity-100,
+);
+
+$theme-colors: map-merge((
+    "secondary-100": lighten($secondary, 10%),
+    "secondary-200": lighten($secondary, 20%),
+    "secondary-300": lighten($secondary, 30%),
+    "secondary-400": lighten($secondary, 40%)
+), $theme-colors);
+
+$theme-colors: map-merge((
+    "success-100": lighten($success, 10%),
+    "success-200": lighten($success, 20%),
+    "success-300": lighten($success, 30%),
+    "success-400": lighten($success, 40%)
+), $theme-colors);
+
+$theme-colors: map-merge((
+    "danger-100": lighten($danger, 10%),
+    "danger-200": lighten($danger, 20%),
+    "danger-300": lighten($danger, 30%),
+    "danger-400": lighten($danger, 40%)
+), $theme-colors);
+
+$theme-colors: map-merge((
+    "warning-100": lighten($warning, 10%),
+    "warning-200": lighten($warning, 20%),
+    "warning-300": lighten($warning, 30%),
+    "warning-400": lighten($warning, 40%)
+), $theme-colors);
+
+$theme-colors: map-merge((
+    "info-100": lighten($info, 10%),
+    "info-200": lighten($info, 20%),
+    "info-300": lighten($info, 30%),
+    "info-400": lighten($info, 40%)
+), $theme-colors);
+
+$custom-file-text: (
+  en: "browse",
+  pt-br: "escolher arquivo"
+);
+
+$form-group-margin-bottom: 0.5rem;
+
+$modal-content-border-width: 0;
+$modal-inner-padding: 0.5rem;
+
+$link-hover-color: lighten(theme-color('secondary'), 40%);
+$link-color: theme-color('secondary');
+$link-hover-decoration: none;
+
+$pagination-active-bg: theme-color("secondary");
+$pagination-active-border-color: theme-color("secondary");
+
+$dropdown-bg: transparentize(theme-color('secondary'), 0.3);
+$dropdown-link-hover-bg: transparentize(theme-color('secondary'), 0.2);
+$dropdown-border-color: transparent;
+$dropdown-border-width: 0;
+$dropdown-link-color: white;
+$dropdown-link-hover-color: $dropdown-link-color;
+$dropdown-padding-y: .3rem;
+$dropdown-header-color: theme-color('primary');
+
+$dropdown-link-active-color: white;
+$dropdown-link-active-bg: $dropdown-link-hover-bg;
+$dropdown-divider-bg: transparentize(white, 0.7);
+
+// $nav-pills-link-active-color: theme-color('primary');
+$nav-pills-link-active-bg: theme-color('primary');
+
+$nav-tabs-link-hover-border-color: transparent;
+
+$input-border-color: $gray-300;
+
+$grid-gutter-width: 10px;
+
+$input-focus-border-color: lighten(theme-color("secondary"), 25%);
+
+$input-btn-focus-color: rgba(theme-color("secondary"), .09);
+$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
+$input-focus-box-shadow: $input-btn-focus-box-shadow;
+
+$card-border-width: 0;
+$card-spacer-x: 0.75rem;
+$card-cap-bg: rgba(theme-color('primary'), .05);
+
+$breadcrumb-padding-y:.5rem;
+$breadcrumb-padding-x:1.25rem;
+$breadcrumb-item-padding: .5rem;
+$breadcrumb-margin-bottom:0;
+
+$breadcrumb-bg: $white-opacity-100;
+$breadcrumb-divider-color: transparentize(white, 0.5);
+$breadcrumb-active-color: white;
+
+$daterangepicker-color: white;
+$daterangepicker-bg-color: lighten($dropdown-bg, 0.5);
+
+$daterangepicker-control-height: 35px;
+$daterangepicker-active-bg-color: lighten(theme-color('secondary'), 15%);
+$daterangepicker-active-color: theme-color('primary');
+
+$daterangepicker-in-range-color:             $daterangepicker-active-color;
+$daterangepicker-in-range-bg-color:          $daterangepicker-active-bg-color;
+
+$daterangepicker-unselected-color: transparentize(white, 0.5) !default;
+$daterangepicker-unselected-border-color: transparent !default;
+$daterangepicker-unselected-bg-color: transparent;
+$daterangepicker-cell-hover-bg-color: theme-color('primary');
+
+$daterangepicker-ranges-bg-color: theme-color('secondary');
+$daterangepicker-ranges-hover-bg-color: theme-color('primary');
+$daterangepicker-ranges-color: white;
+$daterangepicker-ranges-hover-color: theme-color('secondary');
+
+$table-cell-padding:          .6rem;
+$table-cell-padding-sm:       .2rem;
+
+$table-accent-bg:             theme-color('light');
+//@at-root$table-hover-bg:              rgba(theme-color('secondary'), .1);
+//$table-border-color:          transparentize(theme-color('secondary'), 0.9);

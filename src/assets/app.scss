@@ -1,0 +1,27 @@
+@import "variables";
+@import '~bootstrap/scss/bootstrap';
+@import "vue-select/src/scss/vue-select.scss";
+
+body{
+    background-image: linear-gradient(to bottom right, #1dd6b6, #9d2eef);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.v-select,.v-select .vs__dropdown-toggle{
+    height:100%;
+}
+.v-select .vs__dropdown-toggle{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.v-select .label__active.label__active--canscale{
+    top:0px;
+}
+.input__container .label__active.label__active--canscale{
+    top:0px;
+}
