@@ -1,3 +1,34 @@
+# Simulador Ciclic
+
+Simulador de investimentos criado com React e Material UI.
+A decisão de usar material UI foi tomada para ter agilidade no desenvolvimento, priorizando itens mais importantes de tratamento de erros.
+
+## Para inicializar o projeto
+
+Crie um arquivo de variáveis de ambiente (.env) com os seguintes parametros:
+
+```yml
+REACT_APP_API_URL="http://api.mathjs.org/v4/"
+REACT_APP_TAX="0.00517"
+```
+
+Rode os comandos:
+
+### `yarn install`
+### `yarn start`
+
+
+## Todo's e melhorias futuras
+
+- Animar a transição das interfaces
+- Adicionar botões de incremento e decremento para o input de mensalidades. 
+![alt text](https://ibb.co/KmWkVSJ)
+
+- Tratar a segurança da exibição dos dados inputados pelo usuário (Sanitizar os campos)
+
+
+======
+
 # Teste dos fronts
 
 Construa uma aplicação que fará uma simulação de investimento utilizando juros composto. A aplicação terá duas telas:
