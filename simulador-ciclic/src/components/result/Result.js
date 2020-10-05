@@ -13,10 +13,7 @@ function Result({
     return (
         <Fragment>
             <ResultMessage>
-                Ola {name} <br />
-                juntando R$ {parseFloat(installments).toLocaleString("pt-BR")} todo mês, <br />
-                você terá <strong>{futureAmount} </strong> <br />
-                em {period} {period > 1 ? "anos" : "ano"}
+                Ola {name} <br />juntando R$ {parseFloat(installments).toLocaleString("pt-BR")} todo mês, <br />você terá <strong>{futureAmount} </strong> <br />em {period} {period > 1 ? "anos" : "ano"}
             </ResultMessage>
 
             <Button fullWidth={true} variant="contained" color="primary" onClick={resetForm}> Simular Novamente </Button>
@@ -26,9 +23,9 @@ function Result({
 
 Result.propTypes = {
     name: PropTypes.string,
-    installments: PropTypes.number,
+    installments: PropTypes.string,
     futureAmount: PropTypes.string,
-    period: PropTypes.number
+    period: PropTypes.string
 }
 
 export default Result;
