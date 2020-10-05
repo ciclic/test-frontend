@@ -21,12 +21,15 @@ Rode os comandos:
 
 ## Todo's e melhorias futuras
 
+- Adicionar testes da requisição a API
+- Adicionar testes da mudança de interface
 - Animar a transição das interfaces
 - Adicionar botões de incremento e decremento para o input de mensalidades. 
 ![alt text](https://ibb.co/KmWkVSJ)
 
 - Tratar a segurança da exibição dos dados inputados pelo usuário (Sanitizar os campos)
 - Mover o source code para a raiz do projeto
+- Refatorar formulário
 
 
 ======

@@ -8,7 +8,8 @@ import NumberFormatInput from '../numberFormatInput/numberFormatInput';
 const validationSchema = Yup.object().shape({
     name: Yup.string()
         .required('Campo obrigatório'),
-    installments: Yup.string()
+    installments: Yup.number()
+        .min(10, 'Valor mínimo R$10')
         .required('Campo obrigatório')
 })
 
