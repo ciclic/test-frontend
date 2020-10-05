@@ -55,12 +55,12 @@ function Simulator() {
                         </CardContent>
                     </Card>
                 ) : (
-                        <Card variant="outlined">
-                            <CardContent>
-                                <Form setPeriod={setPeriod} handleSubmit={handleSubmit} />
-                            </CardContent>
-                        </Card>
-                    )}
+                    <Card variant="outlined">
+                        <CardContent>
+                            <Form setPeriod={setPeriod} handleSubmit={handleSubmit} />
+                        </CardContent>
+                    </Card>
+                )}
 
 
                 <Snackbar open={error} autoHideDuration={6000} message={errorMessage} />

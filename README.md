@@ -14,6 +14,7 @@ REACT_APP_TAX="0.00517"
 
 Rode os comandos:
 
+### `cd simulador-ciclic`
 ### `yarn install`
 ### `yarn start`
 
@@ -25,6 +26,7 @@ Rode os comandos:
 ![alt text](https://ibb.co/KmWkVSJ)
 
 - Tratar a segurança da exibição dos dados inputados pelo usuário (Sanitizar os campos)
+- Mover o source code para a raiz do projeto
 
 
 ======
