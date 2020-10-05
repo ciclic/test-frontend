@@ -25,11 +25,12 @@ Rode os comandos:
 - Adicionar testes da mudança de interface
 - Animar a transição das interfaces
 - Adicionar botões de incremento e decremento para o input de mensalidades. 
-![alt text](https://ibb.co/KmWkVSJ)
+![alt text](https://uploaddeimagens.com.br/images/002/908/149/full/increment.png?1601895552)
 
 - Tratar a segurança da exibição dos dados inputados pelo usuário (Sanitizar os campos)
 - Mover o source code para a raiz do projeto
 - Refatorar formulário
+- Adicionar Open Graph Tags
 
 
 ======
