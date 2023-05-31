@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #222222;
+}
+
+.container {
+    display: flex;
+    color: #222222;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.telaUm {
+    gap: 20px;
+    width: 400px;
+    display: flex;
+    font-size: 20px;
+    padding: 25px 15px;
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: white;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 50%;
+    text-align: center;
+}
+
+.dadosNome {
+    text-transform: capitalize;
+}
+
+.inputNome {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #222222;
+    text-transform: capitalize;
+    border-bottom: 1px solid #222222;
+}
+
+.inputValor {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #222222;
+    border-bottom: 1px solid #222222;
+}
+
+.inputTempo {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    color: #222222;
+    border-bottom: 1px solid #222222;
+}
+
+.inputTaxa {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    color: #222222;
+    border-bottom: 1px solid #222222;
+}
+
+.btnSimular {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #222222;
+    transition: 400ms;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border: 1px solid #222222;
+    background-color: transparent;
+    
+}
+
+.btnSimular:hover {
+    background-color: #72f951;    
+}
+
+/* Tela dois */
+
+.telaDois {
+    gap: 20px;
+    width: 400px;
+    display: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 25px 15px;
+    flex-direction: column;
+    background-color: white;
+}
+
+.btnNovamente {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #222222;
+    font-weight: bold;
+    transition: 400ms;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: 1px solid #222222;
+}
+
+.btnNovamente:hover {
+    background-color: #72f951;    
+}

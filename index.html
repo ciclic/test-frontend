@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simulador de investimento</title>
+</head>
+<body>
+    <div class="container">
+        <form class="telaUm">
+            
+            <div class="logo">
+                <img src="img/ciclic-logo.svg" alt="Log da Ciclic.com">
+            </div>
+
+            <div>
+                <label>Para começar digite seu nome</label>
+                <input class="inputNome" type="text" placeholder="Primeiro nome" maxlength="20">
+            </div>
+
+            <div>
+                <label>Quanto você vai depositar ao mês?</label>
+                <input class="inputValor" type="number" placeholder="Valor" min="1">
+            </div>
+
+            <div>
+                <label>Por quantos anos você ira investir?</label>
+                <input class="inputTempo" type="number" placeholder="Tempo" min="1">
+            </div>
+
+            <div>
+                <label>Juros ao mês</label>
+                <input class="inputTaxa" type="number" placeholder="Taxa de juros" min="0.01">
+            </div>
+
+            <button class="btnSimular">SIMULAR</button>
+        </form>   
+
+        <div class="telaDois">
+            
+            <div class="logo">
+                <img src="img/ciclic-logo.svg" alt="Log da Ciclic.com">
+            </div>
+
+            <h3 class="dadosNome"></h3>
+            <h3 class="dadosValor"></h3>
+            <h3 class="dadosTaxa"></h3>
+            <h3 class="dadosTempo"></h3>
+            <h3 class="dadosTotal"></h3>
+
+            <button class="btnNovamente">SIMULAR NOVAMENTE</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
